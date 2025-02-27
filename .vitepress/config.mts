@@ -8,9 +8,9 @@ export default defineConfigWithTheme({
   description: "A VitePress Site",
 
   themeConfig: {
-    logo: "./public/logo/Yzs-logo.png",
+    logo: "/logo/Yzs-logo.png",
     musicBall: {
-      src: "./public//bgm/bgm.mp3", // 音乐文件路径MP3",
+      src: "/bgm/bgm.mp3", // 音乐文件路径MP3",
       autoplay: true,
     },
     // https://vitepress.dev/reference/default-theme-config

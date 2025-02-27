@@ -1,4 +1,4 @@
-<img src="../public/个人照片.jpg" alt="描述" style="width: 100px; float: right; padding:10px;margin:10px">
+<img src="/个人照片.jpg" alt="描述" style="width: 100px; float: right; padding:10px;margin:10px">
 
 # 叶泽顺
 
