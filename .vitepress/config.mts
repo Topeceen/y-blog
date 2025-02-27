@@ -4,37 +4,54 @@ import escookConfig from "@escook/vitepress-theme/config";
 // https://vitepress.dev/reference/site-config
 export default defineConfigWithTheme({
   extends: escookConfig,
-  title: "My Awesome Project",
+  title: "小叶的前端笔记",
   description: "A VitePress Site",
+
   themeConfig: {
+    logo: "./public/logo/Yzs-logo.png",
     musicBall: {
-      src: "https://music.163.com/#/song?id=1995162601",
+      src: "./public//bgm/bgm.mp3", // 音乐文件路径MP3",
       autoplay: true,
-      enable: true,
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
-    ],
-
-    sidebar: [
+      { text: "首页", link: "/" },
+      { text: "个人简历", link: "/markdown-examples" },
       {
-        text: "Examples",
+        text: "面试题",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          {
+            text: "HTML-CSS",
+            link: "/InterviewQuestion/HTML-CSS",
+          },
+          {
+            text: "JavaScript",
+            link: "/InterviewQuestion/JS",
+          },
         ],
+        activeMatch: "^/InterviewQuestion/",
       },
+      { text: "前端知识", link: "/api-examples" },
     ],
+    sidebar: {
+      "/InterviewQuestion/": [
+        {
+          text: "面试题",
+          items: [
+            { text: "HTML-CSS", link: "/InterviewQuestion/HTML-CSS" },
+            { text: "JavaScript", link: "/InterviewQuestion/JS" },
+          ],
+        },
+      ],
+    },
 
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
     ],
   },
-  vite:{
+  vite: {
     ssr: {
-      noExternal: ['@escook/vitepress-theme','vitepress']
-    }
-  }
+      noExternal: ["@escook/vitepress-theme", "vitepress"],
+    },
+  },
 });

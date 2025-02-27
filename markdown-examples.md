@@ -1,85 +1,96 @@
-# Markdown Extension Examples
+<img src="../public/个人照片.jpg" alt="描述" style="width: 100px; float: right; padding:10px;margin:10px">
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
+# 叶泽顺
 
-## Syntax Highlighting
+**前端开发工程师 | 珠海 | 7k-9k | 一周内到岗**
+📱 15060816236 | 📧 1274300766@qq.com
 
-VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
+---
 
-**Input**
+## 🔍 基本信息
 
-````md
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-````
+- **年龄**：25 岁（2025 年） | **性别**：男 | **籍贯**：福建
+- **政治面貌**：中共预备党员 | **工作年限**：2 年
+- **技术博客/GitHub**：https://github.com/Topeceen/y-blog
 
-**Output**
+---
 
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
+## 🎓 教育背景
 
-## Custom Containers
+**珠海科技学院** | 网络工程（本科） | 2020.09 - 2024.06  
+**核心课程**：数据结构与算法、Java 程序设计、数据库系统、计算机组成原理、网络系统集成技术
 
-**Input**
+---
 
-```md
-::: info
-This is an info box.
-:::
+## 💼 工作经历
 
-::: tip
-This is a tip.
-:::
+### **珠海陆渔生物科技有限公司** | 前端工程师（全职） | 2024.06 - 2025.01
 
-::: warning
-This is a warning.
-:::
+- 主导开发企业级数据管理后台（React），实现 RBAC 四级权限体系，动态路由加载效率提升 40%；
+- 独立完成物联网小程序前端架构设计，采用 WebSocket 实时通信技术，日均处理数据量达 10W+条；
+- 优化养殖数据统计小程序首屏加载速度，通过 Webpack 代码分割+CDN 加速，首屏时间从 3.2s 降至 1.1s；
+- 推动团队工程化建设，封装通用工具库（Monorepo 架构），跨项目复用率达 80%。
 
-::: danger
-This is a dangerous warning.
-:::
+### **珠海科技学院马克思主义学院** | 前端工程师（实习） | 2023.09 - 2024.05
 
-::: details
-This is a details block.
-:::
-```
+- 重构学院 OA 系统前端模块，采用 Vue3+TypeScript 实现动态表单生成，开发效率提升 30%；
+- 独立设计并开发学院官网响应式页面，支持多终端适配，日均访问量提升 200%；
+- 主导新闻系统迁移至微前端架构（qiankun），子系统独立部署效率提升 50%。
 
-**Output**
+---
 
-::: info
-This is an info box.
-:::
+## 🚀 项目经验
 
-::: tip
-This is a tip.
-:::
+### **1. 企业级数据管理系统（React+NutUI）**
 
-::: warning
-This is a warning.
-:::
+**技术栈**：React 18 / Redux Toolkit / Webpack 5 / ECharts / Axios 双 Token 无感刷新
 
-::: danger
-This is a dangerous warning.
-:::
+- **核心贡献**：
+  - 设计 RBAC 权限体系，支持动态路由按组织权限加载，减少冗余代码量 30%；
+  - 通过 React.memo+useCallback 优化列表渲染性能，FCP 指标提升 45%；
+  - 封装高阶组件统一处理 401/403 异常，系统稳定性提升 90%。
 
-::: details
-This is a details block.
-:::
+### **2. 通用后台管理系统（Vue3+TS）**
 
-## More
+**技术栈**：Vue3 / Pinia / Vite / Element Plus / JSON Schema 解析引擎
 
-Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+- **核心贡献**：
+  - 开发动态表单引擎，支持 JSON 配置生成复杂表单，减少重复开发工作量 60%；
+  - 实现多主题切换功能，通过 CSS 变量+Webpack 插件动态编译主题包；
+  - 集成 Husky+CommitLint 规范 Git 提交，代码 Review 通过率提升 70%。
+
+### **3. 高仿网易云音乐 H5（UniApp+Vue3）**
+
+**技术栈**：UniApp / Web Audio API / IndexedDB / Web Worker
+
+- **核心贡献**：
+  - 实现音频可视化功能，利用 Web Audio API 解析音频频谱数据；
+  - 通过 Web Worker 分片加载 10W+歌单数据，主线程卡顿率降低 85%；
+  - 优化首屏资源加载，采用 CDN 分帧加载封面图，LCP 指标提升 50%。
+
+---
+
+## 🛠 技术栈
+
+- **核心技能**：React / Vue3 / TypeScript / UniApp / Webpack
+- **工程化**：Monorepo / Micro Frontend / CI/CD（GitHub Actions）
+- **性能优化**：Web Vitals 指标调优 / Chrome DevTools 深度使用
+- **工具链**：ESlint + Prettier / Figma / Postman
+
+---
+
+## 🌟 荣誉与证书
+
+- 连续两年获校级“社会实践奖”单项奖学金（2021-2023）
+- 青年志愿者协会“优秀部长”（2022） | “十佳优秀社团”负责人（2023）
+- 全国计算机等级考试（Java 二级）
+
+---
+
+## 📝 自我评价
+
+- 具备从 0 到 1 搭建中大型前端项目经验，熟悉工程化与性能优化全链路；
+- 擅长技术方案设计与团队协作，主导过 3 个日均 PV 超 5W+的项目落地；
+- 持续关注前沿技术，熟悉 React18 新特性（Concurrent Mode）、Vue3 组合式 API 等。
+
+---
