@@ -3,6 +3,16 @@ import escookConfig from "@escook/vitepress-theme/config";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfigWithTheme({
+  base: "/y-blog/",
+  head: [
+    [
+      "link",
+      {
+        rel: "icon",
+        href: "/y-blog/favicon.svg",
+      },
+    ],
+  ],
   extends: escookConfig,
   title: "小叶的前端笔记",
   description: "A VitePress Site",
