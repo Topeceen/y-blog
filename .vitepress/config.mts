@@ -9,7 +9,7 @@ export default defineConfigWithTheme({
       "link",
       {
         rel: "icon",
-        href: "/y-blog/logo/Yzs-logo.png",
+        href: "logo/Yzs-logo.png",
       },
     ],
   ],
