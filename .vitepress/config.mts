@@ -16,11 +16,10 @@ export default defineConfigWithTheme({
   extends: escookConfig,
   title: "小叶的前端笔记",
   description: "A VitePress Site",
-
   themeConfig: {
     logo: "/logo/Yzs-logo.png",
     musicBall: {
-      src: "/bgm/bgm.mp3", // 音乐文件路径MP3",
+      src: "/y-blog//bgm/bgm.mp3", // 音乐文件路径MP3",
       autoplay: true,
     },
     // https://vitepress.dev/reference/default-theme-config
