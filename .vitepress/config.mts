@@ -9,7 +9,7 @@ export default defineConfigWithTheme({
       "link",
       {
         rel: "icon",
-        href: "/logo/Yzs-logo.png",
+        href: "/y-blog/logo/Yzs-logo.png",
       },
     ],
   ],
@@ -19,7 +19,7 @@ export default defineConfigWithTheme({
   themeConfig: {
     logo: "/logo/Yzs-logo.png",
     musicBall: {
-      src: "/y-blog//bgm/bgm.mp3", // 音乐文件路径MP3",
+      src: "/y-blog/bgm/bgm.mp3", // 音乐文件路径MP3",
       autoplay: true,
     },
     // https://vitepress.dev/reference/default-theme-config
