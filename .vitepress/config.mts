@@ -19,7 +19,16 @@ export default defineConfigWithTheme({
   themeConfig: {
     logo: "/logo/Yzs-logo.png",
     musicBall: {
-      src: "/bgm/bgm.mp3", // 音乐文件路径MP3",
+      list: [
+        {
+          name: "唯一 - G.E.M. 邓紫棋",
+          src: "/bgm/bgm1.mp3", // 音乐文件路径MP3",
+        },
+        {
+          name: "Where Did U Go - G.E.M. 邓紫棋",
+          src: "/bgm/bgm2.mp3", // 音乐文件路径MP3",
+        },
+      ],
       autoplay: true,
     },
     // https://vitepress.dev/reference/default-theme-config
@@ -72,6 +81,14 @@ export default defineConfigWithTheme({
             {
               text: "基础配置",
               link: "/projects/后台管理/基础配置",
+            },
+            {
+              text: "组件引入、登录设置",
+              link: "/projects/后台管理/组件引入、登录设置",
+            },
+            {
+              text: "路由配置、页面搭建",
+              link: "/projects/后台管理/路由配置、页面搭建",
             },
           ],
         },
