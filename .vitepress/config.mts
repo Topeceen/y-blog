@@ -79,16 +79,24 @@ export default defineConfigWithTheme({
           text: "通用型后台管理系统",
           items: [
             {
-              text: "基础配置",
-              link: "/projects/后台管理/基础配置",
+              text: "1、项目搭建、基础配置",
+              link: "/projects/后台管理/项目搭建、基础配置",
             },
             {
-              text: "组件引入、登录设置",
+              text: "2、组件引入、登录设置",
               link: "/projects/后台管理/组件引入、登录设置",
             },
             {
-              text: "路由配置、页面搭建",
+              text: "3、路由配置、页面搭建",
               link: "/projects/后台管理/路由配置、页面搭建",
+            },
+            {
+              text: "4、动态路由、用户界面",
+              link: "/projects/后台管理/动态路由、用户界面",
+            },
+            {
+              text: "5、高阶组件、页面细节",
+              link: "/projects/后台管理/高阶组件、页面细节",
             },
           ],
         },
