@@ -36,21 +36,6 @@ export default defineConfigWithTheme({
       { text: "首页", link: "/" },
       { text: "个人简历", link: "/resume" },
       {
-        text: "面试题",
-        items: [
-          {
-            text: "HTML-CSS",
-            link: "/InterviewQuestion/HTML-CSS",
-          },
-          {
-            text: "JavaScript",
-            link: "/InterviewQuestion/JS",
-          },
-        ],
-        activeMatch: "^/InterviewQuestion/",
-      },
-      { text: "前端知识", link: "/api-examples" },
-      {
         text: "项目经历",
         items: [
           {
@@ -62,6 +47,21 @@ export default defineConfigWithTheme({
             link: "/projects/陆渔生物科技",
           },
         ],
+      },
+      { text: "问题及处理", link: "/api-examples" },
+      {
+        text: "题库",
+        items: [
+          {
+            text: "HTML-CSS",
+            link: "/InterviewQuestion/HTML-CSS",
+          },
+          {
+            text: "JavaScript",
+            link: "/InterviewQuestion/JS",
+          },
+        ],
+        activeMatch: "^/InterviewQuestion/",
       },
     ],
     sidebar: {

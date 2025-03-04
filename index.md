@@ -21,7 +21,7 @@ features:
   - icon: 💛
     title: 通用型后台管理系统（Vue3 + TypeScript）
     details: 常规管理系统后台模板，支持动态表单生成、多主题切换、国际化等企业级功能
-    link: "projects/后台管理/基础配置"
+    link: "projects/后台管理/项目搭建、基础配置"
   - icon: 💜
     title: 高仿网易云音乐项目（h5版）（uniapp + vue3）
     details: 基于uniapp，1：1实现网易云音乐h5版本
