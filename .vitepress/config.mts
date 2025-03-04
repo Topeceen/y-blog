@@ -55,7 +55,7 @@ export default defineConfigWithTheme({
         items: [
           {
             text: "通用型后台管理系统",
-            link: "/projects/后台管理/基础配置",
+            link: "/projects/后台管理/项目搭建、基础配置",
           },
           {
             text: "陆渔生物科技企业级内部数据管理系统",
@@ -97,6 +97,10 @@ export default defineConfigWithTheme({
             {
               text: "5、高阶组件、页面细节",
               link: "/projects/后台管理/高阶组件、页面细节",
+            },
+            {
+              text: "6、按钮权限、Echart展示",
+              link: "/projects/后台管理/按钮权限、Echart展示",
             },
           ],
         },
