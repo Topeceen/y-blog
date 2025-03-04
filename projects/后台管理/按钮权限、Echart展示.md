@@ -14,7 +14,8 @@
 
 ### 3.1. 顶部数字的数据展示
 
-- countup.js
+- countup.js（在 DOM 渲染后）
+  - onMounted 函数
 
 ### 3.2. Echarts 图表的展示
 
