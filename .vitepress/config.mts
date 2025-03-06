@@ -48,7 +48,7 @@ export default defineConfigWithTheme({
           },
         ],
       },
-      { text: "问题及处理", link: "/api-examples" },
+      { text: "问题及处理", link: "/experience/基于TS的axios封装" },
       {
         text: "题库",
         items: [
@@ -67,14 +67,14 @@ export default defineConfigWithTheme({
     sidebar: {
       "/InterviewQuestion/": [
         {
-          text: "面试题",
+          text: "题库",
           items: [
             { text: "HTML-CSS", link: "/InterviewQuestion/HTML-CSS" },
             { text: "JavaScript", link: "/InterviewQuestion/JS" },
           ],
         },
       ],
-      "/projects/后台管理/": [
+      "/projects/": [
         {
           text: "通用型后台管理系统",
           items: [
@@ -107,6 +107,42 @@ export default defineConfigWithTheme({
         {
           text: "陆渔生物科技企业级内部数据管理系统",
           items: [{ text: "用户管理", link: "/projects/后台管理/用户管理" }],
+        },
+        {
+          text: "YZS高清壁纸项目（微信小程序）",
+          items: [
+            {
+              text: "1、项目搭建、样式布局",
+              link: "projects/YZS壁纸/项目搭建、样式布局",
+            },
+            {
+              text: "2、功能模块、项目实现",
+              link: "projects/YZS壁纸/功能模块、项目实现",
+            },
+          ],
+        },
+      ],
+      "/experience/": [
+        {
+          text: "问题及处理",
+          items: [
+            {
+              text: "1.基于TS的axios封装",
+              link: "/experience/基于TS的axios封装",
+            },
+            {
+              text: "2.自动化部署",
+              link: "/experience/自动化部署",
+            },
+            {
+              text: "3.接入支付功能的方法",
+              link: "/experience/接入支付功能的方法",
+            },
+            {
+              text: "4.WebSocket实时通信",
+              link: "/experience/WebSocket实时通信",
+            },
+          ],
         },
       ],
     },

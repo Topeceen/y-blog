@@ -14,8 +14,8 @@ hero:
       text: 个人简历
       link: /resume
     - theme: alt
-      text: 前端知识
-      link: /api-examples
+      text: 问题及处理
+      link: /experience/基于TS的axios封装
 
 features:
   - icon: 💛
@@ -23,9 +23,9 @@ features:
     details: 常规管理系统后台模板，支持动态表单生成、多主题切换、国际化等企业级功能
     link: "projects/后台管理/项目搭建、基础配置"
   - icon: 💜
-    title: 高仿网易云音乐项目（h5版）（uniapp + vue3）
-    details: 基于uniapp，1：1实现网易云音乐h5版本
-    link: "markdown-examples"
+    title: YZS高清壁纸项目（微信小程序版）（uniapp + vue3，可扫码打开）
+    details: 基于uniapp,实现下载高清壁纸，实现懒加载效果优化性能，减少图片打包体积。
+    link: "projects/YZS壁纸/项目搭建、样式布局"
   - icon: 💚
     title: 陆渔生物科技企业级内部数据管理系统（React+Semi Design）
     details: 面向企业内部的B/S架构数据管理平台，包含权限管理、数据看板等核心模块；实现RBAC四级权限体系，支持路由懒加载。
