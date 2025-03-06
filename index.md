@@ -23,8 +23,8 @@ features:
     details: 常规管理系统后台模板，支持动态表单生成、多主题切换、国际化等企业级功能
     link: "projects/后台管理/项目搭建、基础配置"
   - icon: 💜
-    title: YZS高清壁纸项目（微信小程序版）（uniapp + vue3，可扫码打开）
-    details: 基于uniapp,实现下载高清壁纸，实现懒加载效果优化性能，减少图片打包体积。
+    title: YZS高清壁纸项目（微信小程序）（内附小程序二维码）
+    details: 基于uniapp+vue3,实现下载高清壁纸，实现懒加载效果优化性能，减少图片打包体积。
     link: "projects/YZS壁纸/项目搭建、样式布局"
   - icon: 💚
     title: 陆渔生物科技企业级内部数据管理系统（React+Semi Design）
