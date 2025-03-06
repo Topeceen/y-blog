@@ -9,7 +9,7 @@
 
 ## 🔍 基本信息
 
-- **年龄**：25 岁（2025 年） | **性别**：男 | **籍贯**：福建
+- **年龄**：23 岁（2025 年） | **性别**：男 | **籍贯**：福建
 - **政治面貌**：中共预备党员 | **工作年限**：2 年
 - **技术博客/GitHub**：https://github.com/Topeceen
 
@@ -40,7 +40,7 @@
 
 ## 🚀 项目经验
 
-### **1. 企业级数据管理系统（React+NutUI）**
+### **1. 企业级数据管理系统（React+Semi design）**
 
 **技术栈**：React 18 / Redux Toolkit / Webpack 5 / ECharts / Axios 双 Token 无感刷新
 
@@ -71,7 +71,7 @@
 
 ## 🛠 技术栈
 
-- **核心技能**：React / Vue3 / TypeScript / UniApp / Webpack
+- **核心技能**：React / Vue3 / TypeScript / UniApp / Webpack / AI+开发模式
 - **工程化**：Monorepo / Micro Frontend / CI/CD（GitHub Actions）
 - **性能优化**：Web Vitals 指标调优 / Chrome DevTools 深度使用
 - **工具链**：ESlint + Prettier / Figma / Postman / Apifox
