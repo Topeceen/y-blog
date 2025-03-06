@@ -43,8 +43,12 @@ export default defineConfigWithTheme({
             link: "/projects/后台管理/项目搭建、基础配置",
           },
           {
+            text: "YZS高清壁纸项目（微信小程序）",
+            link: "projects/YZS壁纸/项目搭建、样式布局",
+          },
+          {
             text: "陆渔生物科技企业级内部数据管理系统",
-            link: "/projects/陆渔生物科技",
+            link: "/projects/陆渔生物/陆渔生物",
           },
         ],
       },
@@ -106,7 +110,7 @@ export default defineConfigWithTheme({
         },
         {
           text: "陆渔生物科技企业级内部数据管理系统",
-          items: [{ text: "用户管理", link: "/projects/后台管理/用户管理" }],
+          items: [{ text: "用户管理", link: "/projects/陆渔生物/陆渔生物" }],
         },
         {
           text: "YZS高清壁纸项目（微信小程序）",

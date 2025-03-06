@@ -29,5 +29,5 @@ features:
   - icon: 💚
     title: 陆渔生物科技企业级内部数据管理系统（React+Semi Design）
     details: 面向企业内部的B/S架构数据管理平台，包含权限管理、数据看板等核心模块；实现RBAC四级权限体系，支持路由懒加载。
-    link: "markdown-examples"
+    link: "/projects/陆渔生物/陆渔生物"
 ---
