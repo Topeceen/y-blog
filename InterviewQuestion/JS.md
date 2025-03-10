@@ -110,21 +110,21 @@
 
 ### Set 只允许存储唯一的值，可以将数组转换为 Set，然后再将 Set 转换回数组以去重。
 
-```
+```js
 const arr = [1,2,3.4,5.5,1]
 onnst newArr = [...new Set(arr)]
 ```
 
 ### filter 方法遍历数组
 
-```
+```js
 const arr=[1，2，2，3，4，4，5];
 const uniqueArr = arr.filter((value, index, self)=>self.index0f(value)=== index);
 ```
 
 ### 用 reduce 方法逐个遍历数组元素，构建一个新的数组，只添加第一次出现的元素。
 
-```
+```js
 const arr=[1，2，2，3，4，4，5];
 const unigueArr =arr.reduce((acc,current)=>{
 if(!acc.includes(current)){
@@ -136,7 +136,7 @@ return acc;
 
 ### 使用 indexof 方法，遍历数组，对于每个元素，检查其在数组中的索引，如果第一次出现，则添加到新数组。
 
-```
+```js
 const arr=[1，2，2，3，5];
 const uniqueArr =[];
 arr.forEach((value)=>{
@@ -149,7 +149,7 @@ arr.forEach((value)=>{
 
 ### 使用 includes 方法:类似于 index0f 方法，只不过使用 includes 来检查元素是否已存在于新数组。
 
-```
+```js
 const arr=[1，2，2，3，4，4，5];
 const uniqueArr =[]
 ;arr.forEach((value)=>{
@@ -198,21 +198,21 @@ const uniqueArr =[]
 
 - 累加
 
-```
-const result =[1,2,3].reduce((pre,cur)=>pre + cur);
+```js
+const result = [1, 2, 3].reduce((pre, cur) => pre + cur);
 console.log(result);
 ```
 
 - 找最大值
 
-```
-const result =[1,2,3,2,1].reduce((pre, cur)=>Math.max(pre, cur));
+```js
+const result = [1, 2, 3, 2, 1].reduce((pre, cur) => Math.max(pre, cur));
 console.log(result);
 ```
 
 - 数组去重
 
-```
+```js
 const resultList =[1,2,3,2,1].reduce((prelist,cur)=>{
     if(preList.indexOf(cur) === -1){
         preList.push(cur);
@@ -224,7 +224,7 @@ console.log(resultList);
 
 - 归类
 
-```
+```js
 const dataList=[{
 name:'aa',
 country:'China'
@@ -251,10 +251,11 @@ console.log(resultobj);
 
 - 字符串反转
 
-```
-const str='hello world';
-const resultStr =Array.from(str).reduce((pre,cur)=>{return`${cur}${pre}`;
-},'');
+```js
+const str = "hello world";
+const resultStr = Array.from(str).reduce((pre, cur) => {
+  return `${cur}${pre}`;
+}, "");
 console.log(resultstr);
 ```
 
@@ -262,25 +263,135 @@ console.log(resultstr);
 
 ### for in
 
-const obj={ a:1,b:2,c:3 };
-for( let key in obj){
-console.log(key,obj[key]);
+```js
+const obj = { a: 1, b: 2, c: 3 };
+for (let key in obj) {
+  console.log(key, obj[key]);
 }
+```
 
 ### object.keys
 
+```js
 const obj={a:1,b:2,c:3 };
 const keys = 0bject.keys(obj);
 keys.forEach(key =>{
 console.log(key,obj[key]);
 });
+```
 
 ### 0bject.entries
 
+```js
 const obj={a:1，b:2，c:3};
 const entries =0bject.entries(obj);
-entries.forEach(([key,value])=>{console.log(key,value);
+entries.forEach([key,value])=>{console.log(key,value)};
+```
 
 ## Reflect.ownKeys
 
-const obj={a:1,b:2，c:3 };Reflect.ownKeys(obj).forEach(key =>{conosle.log(key,obj[key]);
+```js
+const obj={a:1,b:2，c:3 };Reflect.ownKeys(obj).forEach(key) =>{conosle.log(key,obj[key])};
+```
+
+### 十九、创建函数的方式
+
+- 函数声明
+
+```js
+function sayHello() {
+  console.log("hello");
+}
+```
+
+- 函数表达式
+
+```js
+const sayHello = () {
+  console.log("hello")
+}
+sayHello()
+```
+
+- 箭头函数
+
+```js
+const add = (a, b) => {
+  a + b;
+};
+```
+
+- 匿名函数
+
+```js
+setTimeout(function(){
+  console.log("hello")
+},1000),
+```
+
+### 二十、创建对象的几种方式
+
+- 对象字面量
+
+```js
+const obj= {
+  name
+  age
+}
+```
+
+- 构造函数
+
+```js
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+const person = new Person("a", 30);
+```
+
+- Object.create()方法
+
+```js
+const obj = Object.create(null);
+obj.name = "a";
+obj.age = 18;
+```
+
+- 工厂函数
+
+```js
+function createPerson(name, age) {
+  return {
+    name,
+    age,
+  };
+}
+const person = createPerson("a", 30);
+```
+
+- 类
+
+```js
+class Person {
+  c(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+}
+const person = new Person("a", 30);
+```
+
+### 宿主对象、内置对象、原生对象
+
+- 宿主对象(Host Objects)
+  - 宿主对象是由宿主环境(通常是浏览器或 Node.js)提供的对象。它们不属于 JavaScript 的核心，而是根据运行环境提供的功能而存在。宿主对象可以包括
+  - 浏览器环境中的 window、document、XMLHttpRequest
+  - Node.js 环境中的 global、process 等。
+- 宿主对象的定义和行为取决于宿主环境，因此它们可能在不同的环境中有不同的特性。
+- 内置对象(Built-in Objects)
+  - 内置对象是 JavaScript 语言本身提供的对象，它们包含在 JavaScript 的标准规范中。这些对象包括全局对象、数学对象、日期对象、正则表达式对象等。内置对象可以直接在任何 JavaScript 环境中使用，无需额外导入或引入。例如，全局对象 Math 用于数学计算，日期对象 Date 用于日期和时间操作。
+- 原生对象(Native Objects)
+  - 原生对象是 JavaScript 语言的一部分，但它们不是内置对象。原生对象是通过构造函数或字面量方式创建的对象，例如数组、字符串、函数、对象等。这些对象可以通过 JavaScript 代码自定义，它们通常是开发人员用来构建应用程序的基本构建块。
+
+boy undefond undefond ADa nan undefond baby boy

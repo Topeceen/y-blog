@@ -68,7 +68,7 @@
 - 传统 Margin 法
 - CSS 数学函数法
 
-```
+```css
 .box {
   position: absolute;
   left: calc(50% - 150px); /* 50%视窗 - 元素半宽 */
@@ -116,59 +116,59 @@
 - 使用场景
   1️⃣ ‌CPU 密集型任务 ✅ 图像滤镜、3D 模型计算、大数据分析
 
-  ```
+  ```js
   // 主线程：启动图像处理Worker
-  const worker = new Worker('/image-processor.js');
+  const worker = new Worker("/image-processor.js");
   worker.postMessage({ imageData: rawData });
   ```
 
   2️⃣ ‌ 实时数据流处理 ✅ 物联网设备监控、音视频流解码
 
-  ```
+  ```js
   // Worker线程：持续接收传感器数据
   onmessage = ({ data }) => {
-  const result = processSensorData(data);
-  postMessage(result);
+    const result = processSensorData(data);
+    postMessage(result);
   };
   ```
 
   3️⃣ ‌ 长任务拆解 ✅ 大型文件解析、分页数据预加载
 
-  ```
+  ```js
   // 主线程：分片处理Excel文件
-  worker.postMessage({ task: 'parseExcel', chunk: fileSlice });
+  worker.postMessage({ task: "parseExcel", chunk: fileSlice });
   ```
 
 - 如何使用
   - ‌ 创建 Worker 文件 ‌（如 worker.js）
-  ```
+  ```js
   // worker.js
-  addEventListener('message', ({ data }) => {
-  const result = heavyTask(data);  // 执行耗时操作
-  postMessage(result);
+  addEventListener("message", ({ data }) => {
+    const result = heavyTask(data); // 执行耗时操作
+    postMessage(result);
   });
   ```
 - ‌ 主线程初始化 ‌
-  ```
-  const worker = new Worker('worker.js', {
-  type: 'module',  // 2025推荐：支持ES模块
-  name: 'calc-worker'
+  ```js
+  const worker = new Worker("worker.js", {
+    type: "module", // 2025推荐：支持ES模块
+    name: "calc-worker",
   });
   ```
 - ‌ 双向通信 ‌
 
-  ```
+  ```js
   // 主线程发送数据
-  worker.postMessage({ action: 'start', params: 1000000 });
+  worker.postMessage({ action: "start", params: 1000000 });
   // 主线程接收结果
   worker.onmessage = ({ data }) => {
-  console.log('计算结果:', data);
+    console.log("计算结果:", data);
   };
   ```
 
 - ‌ 资源释放 ‌
-  ```
-  worker.terminate();  // 主动销毁Worker
+  ```js
+  worker.terminate(); // 主动销毁Worker
   ```
 
 ### websocket
@@ -298,7 +298,7 @@
 
 ## 十五、画一条 0.5px 的线
 
-```
+```css
 .thin-line{
   <!-- 设置线的高度为1像素 -->
   height：1px;
@@ -345,7 +345,7 @@
 
 - 清除浮动
 
-```
+```css
 .box{
   clear:both;
 }
@@ -446,7 +446,7 @@
 
 ## 二十六、单行元素的文本省略号实现方式
 
-```
+```css
 .ellipsis-text {
     /* 防止文本换行 */
   white-space: nowrap;

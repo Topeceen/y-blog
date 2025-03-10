@@ -146,6 +146,10 @@ export default defineConfigWithTheme({
               text: "4.WebSocket实时通信",
               link: "/experience/WebSocket实时通信",
             },
+            {
+              text: "5.利用Ionic集合Vue3和Framework7",
+              link: "/experience/利用Ionic集合Vue3和Framework7",
+            },
           ],
         },
       ],
