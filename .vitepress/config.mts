@@ -150,6 +150,14 @@ export default defineConfigWithTheme({
               text: "5.利用Ionic集合Vue3和Framework7",
               link: "/experience/利用Ionic集合Vue3和Framework7",
             },
+            {
+              text: "6.slice()的用法",
+              link: "/experience/slice()的用法",
+            },
+            {
+              text: "7.ssh配置教程",
+              link: "/experience/ssh配置教程",
+            },
           ],
         },
       ],
