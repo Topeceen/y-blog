@@ -67,6 +67,16 @@ export default defineConfigWithTheme({
         ],
         activeMatch: "^/InterviewQuestion/",
       },
+      {
+        text: "训练计划",
+        items: [
+          {
+            text: "1、基础训练计划",
+            link: "/trainingPlan/训练计划",
+          },
+        ],
+        activeMatch: "^/trainingPlan/",
+      },
     ],
     sidebar: {
       "/InterviewQuestion/": [
